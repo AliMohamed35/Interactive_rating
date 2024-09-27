@@ -21,10 +21,7 @@ body {
     justify-content: center;
     height: 100vh;
 }
-/* .container{
-    display: none;
-} */
-.card {
+.card1 {
     background-color: var(--DarkBlue);
     max-width: 350px;
     border-radius: 10px;
@@ -44,7 +41,7 @@ body {
 }
 
 h1,
-p{
+p {
     margin-bottom: 10px;
 }
 
@@ -75,7 +72,8 @@ p {
         color: var(--LightGrey);
     }
 }
-button{
+
+button {
     background-color: var(--Orange);
     text-transform: uppercase;
     border: none;
@@ -86,16 +84,59 @@ button{
     letter-spacing: 1px;
 
 }
-button:hover, .rating-circles:hover{
+
+button:hover,
+.rating-circles:hover {
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--Orange);
 }
-button:hover{
+
+button:hover {
     background-color: white;
+}
+/**************************************************/
+.thank-you-cont {
+    display: none; /* Initially hidden */
+    background-color: var(--DarkBlue);
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: absolute; /* Centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .label {
+        margin-bottom: 25px;
+        background-color: hsl(213deg 14.64% 28.29%);
+        padding: 10px;
+        border-radius:20px;
+        color: var(--Orange);
+    }
+    h2{
+        margin-bottom: 10px;
+    }
+}
+.card2 img {
+    margin: 25px;
+}
+/********************************************/
+
+/********************Interactions************/
+.btn.active {
+    background-color: white; /* Change this to your desired active color */ 
+    color: black;
 }
 
-.active-state{ /* will be added to JS */
-    background-color: white;
+.hide{
+    display: none;
 }
+.show{
+    display: block;
+}
+/********************Interactions************/

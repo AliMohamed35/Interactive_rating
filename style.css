@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    background-color: var(--VeryDarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* .container{
+    display: none;
+} */
+.card {
+    background-color: var(--DarkBlue);
+    max-width: 350px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.star {
+    background-color: hsl(213deg 14.64% 28.29%);
+    box-shadow: 0px 4px 10px hsl(0deg 0% 0% / 40%);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+h1,
+p{
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: white;
+    font-weight: 700;
+}
+
+p {
+    color: var(--LightGrey);
+    font-weight: 400;
+}
+
+.rating-circles {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px 20px 0px;
+
+    .btn {
+        border-radius: 50%;
+        box-shadow: 0px 4px 10px hsl(0deg 0% 0% / 40%);
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(213deg 14.64% 28.29%);
+        color: var(--LightGrey);
+    }
+}
+button{
+    background-color: var(--Orange);
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+button:hover, .rating-circles:hover{
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: var(--Orange);
+}
+button:hover{
+    background-color: white;
+}
+
+.active-state{ /* will be added to JS */
+    background-color: white;
+}

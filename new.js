@@ -15,7 +15,7 @@ function popUpShow(){
         let thankYouCont = document.getElementsByClassName('thank-you-cont')[0];
 
         const labelSpan = document.querySelector(".label span");
-        labelSpan.innerHTML = `You have selected ${selectedRating} out of 5`;
+        labelSpan.innerHTML = "You have selected ${selectedRating} out of 5";
 
         container.classList.add("hide");
         thankYouCont.classList.add("show");
